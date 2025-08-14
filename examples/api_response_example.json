@@ -1,0 +1,263 @@
+{
+  "call_id": "CALL_2024_001",
+  "analysis_status": "completed",
+  "analysis_timestamp": "2024-01-15T14:30:00Z",
+  "processing_time_seconds": 45.2,
+  
+  "call_metadata": {
+    "agent_id": "agent_001",
+    "agent_name": "Sarah Johnson",
+    "customer_id": "customer_001",
+    "customer_name": "Mike Thompson",
+    "call_duration_seconds": 754,
+    "call_date": "2024-01-15T10:00:00Z",
+    "product": "Enterprise CRM Solution",
+    "audio_file_size_mb": 12.5,
+    "audio_format": "wav",
+    "sample_rate": 16000
+  },
+  
+  "transcription": {
+    "status": "completed",
+    "confidence_score": 0.94,
+    "language_detected": "en",
+    "speaker_count": 2,
+    "total_words": 1247,
+    "segments": [
+      {
+        "timestamp_start": 0.0,
+        "timestamp_end": 2.5,
+        "speaker": "agent",
+        "text": "Hi Mike, this is Sarah Johnson calling from TechSolutions. How are you doing today?",
+        "confidence": 0.96
+      },
+      {
+        "timestamp_start": 2.5,
+        "timestamp_end": 4.8,
+        "speaker": "customer",
+        "text": "Hi Sarah, I'm doing well, thanks for asking. What's this call about?",
+        "confidence": 0.94
+      }
+    ],
+    "full_transcript": "Hi Mike, this is Sarah Johnson calling from TechSolutions. How are you doing today? Hi Sarah, I'm doing well, thanks for asking. What's this call about?..."
+  },
+  
+  "sentiment_analysis": {
+    "overall_sentiment": {
+      "score": 0.78,
+      "label": "positive",
+      "confidence": 0.89
+    },
+    "agent_sentiment": {
+      "score": 0.85,
+      "label": "confident",
+      "confidence": 0.92
+    },
+    "customer_sentiment": {
+      "score": 0.72,
+      "label": "interested",
+      "confidence": 0.87
+    },
+    "sentiment_timeline": [
+      {
+        "timestamp": 0,
+        "overall_sentiment": 0.65,
+        "agent_sentiment": 0.70,
+        "customer_sentiment": 0.60
+      },
+      {
+        "timestamp": 120,
+        "overall_sentiment": 0.78,
+        "agent_sentiment": 0.85,
+        "customer_sentiment": 0.72
+      }
+    ]
+  },
+  
+  "coachable_moments": [
+    {
+      "moment_id": "cm_001",
+      "timestamp_start": 110.0,
+      "timestamp_end": 160.0,
+      "moment_type": "price_objection",
+      "confidence_score": 0.92,
+      "category": "objection_handling",
+      "severity": "medium",
+      "description": "Customer expressed concern about $15,000 price point",
+      "agent_response_quality": "excellent",
+      "coaching_opportunity": {
+        "strengths": [
+          "Successfully reframed price as investment with ROI calculation",
+          "Used cost-benefit analysis effectively",
+          "Provided concrete numbers ($18,750 annual cost of manual process)"
+        ],
+        "improvements": [
+          "Could have asked about budget range earlier in the call",
+          "Should have qualified budget expectations in discovery phase"
+        ],
+        "best_practices": [
+          "Always qualify budget expectations before detailed presentation",
+          "Use ROI calculations to reframe price objections",
+          "Provide specific cost savings examples"
+        ],
+        "script_suggestions": [
+          "What's your budget range for this type of solution?",
+          "How much are you currently spending on manual processes?",
+          "What would be the cost of not implementing this solution?"
+        ]
+      },
+      "audio_clip_url": "/api/v1/replay/CALL_2024_001/moment/cm_001/audio",
+      "transcript_segment": "Mike: That does sound valuable. What about pricing? We're working with a pretty tight budget. Sarah: I understand budget constraints are always a consideration..."
+    },
+    {
+      "moment_id": "cm_002",
+      "timestamp_start": 75.0,
+      "timestamp_end": 105.0,
+      "moment_type": "feature_explanation",
+      "confidence_score": 0.88,
+      "category": "value_proposition",
+      "severity": "low",
+      "description": "Customer showed interest in AI lead scoring features",
+      "agent_response_quality": "good",
+      "coaching_opportunity": {
+        "strengths": [
+          "Clear explanation of AI benefits",
+          "Mentioned specific accuracy improvement (40% better)",
+          "Explained learning capability"
+        ],
+        "improvements": [
+          "Could have used more specific examples or case studies",
+          "Should have provided customer success stories"
+        ],
+        "best_practices": [
+          "Always have 2-3 concrete examples ready for key features",
+          "Use customer success stories to validate claims",
+          "Provide specific metrics and benchmarks"
+        ],
+        "script_suggestions": [
+          "Let me share a specific example of how this worked for Company X...",
+          "Our customers typically see 40% improvement in lead conversion...",
+          "Here's a case study showing the before and after results..."
+        ]
+      },
+      "audio_clip_url": "/api/v1/replay/CALL_2024_001/moment/cm_002/audio",
+      "transcript_segment": "Mike: The AI lead scoring sounds interesting. How does that actually work? Sarah: Great question! Our AI analyzes customer behavior patterns..."
+    }
+  ],
+  
+  "executive_summary": {
+    "call_outcome": "successfully_closed",
+    "deal_value": 15000,
+    "deal_stage": "pilot_program",
+    "next_steps": [
+      "Send pilot agreement via email",
+      "Schedule kickoff call for Monday 2 PM Eastern",
+      "Begin pilot program implementation"
+    ],
+    "key_highlights": [
+      "Successfully handled 5 major objections",
+      "Converted price concern into ROI discussion",
+      "Introduced pilot program to reduce risk",
+      "Set clear timeline and next steps"
+    ],
+    "risk_factors": [
+      "Budget constraints mentioned",
+      "Competitive evaluation in progress",
+      "Implementation timeline concerns"
+    ],
+    "opportunities": [
+      "Pilot program success could lead to full contract",
+      "Potential for additional team expansion",
+      "Reference customer opportunity"
+    ],
+    "action_items": [
+      {
+        "action": "Send pilot agreement",
+        "owner": "Sarah Johnson",
+        "due_date": "2024-01-15",
+        "priority": "high"
+      },
+      {
+        "action": "Schedule kickoff call",
+        "owner": "Sarah Johnson",
+        "due_date": "2024-01-15",
+        "priority": "high"
+      },
+      {
+        "action": "Prepare implementation plan",
+        "owner": "Implementation Team",
+        "due_date": "2024-01-16",
+        "priority": "medium"
+      }
+    ]
+  },
+  
+  "performance_metrics": {
+    "objections_handled": 5,
+    "buying_signals_detected": 8,
+    "close_rate": 1.0,
+    "call_efficiency_score": 0.87,
+    "agent_confidence_score": 0.85,
+    "customer_engagement_score": 0.78,
+    "value_proposition_clarity": 0.82,
+    "objection_handling_effectiveness": 0.90
+  },
+  
+  "replay_functionality": {
+    "full_call_audio_url": "/api/v1/replay/CALL_2024_001/full-audio",
+    "moment_clips": [
+      {
+        "moment_id": "cm_001",
+        "audio_url": "/api/v1/replay/CALL_2024_001/moment/cm_001/audio",
+        "duration_seconds": 50.0,
+        "title": "Price Objection Handling"
+      },
+      {
+        "moment_id": "cm_002",
+        "audio_url": "/api/v1/replay/CALL_2024_001/moment/cm_002/audio",
+        "duration_seconds": 30.0,
+        "title": "AI Feature Explanation"
+      }
+    ],
+    "tts_summary_url": "/api/v1/speak/audio/summary_CALL_2024_001.wav",
+    "coaching_audio_url": "/api/v1/speak/audio/coaching_CALL_2024_001.wav"
+  },
+  
+  "ai_insights": {
+    "conversation_patterns": [
+      "Agent used consultative selling approach effectively",
+      "Customer showed increasing engagement throughout call",
+      "Objection handling followed SPIN methodology"
+    ],
+    "communication_style": {
+      "agent": "Professional, confident, consultative",
+      "customer": "Analytical, detail-oriented, cautious"
+    },
+    "buying_signals": [
+      "Asking about implementation timeline",
+      "Requesting pilot program details",
+      "Showing interest in security features",
+      "Asking about next steps"
+    ],
+    "risk_indicators": [
+      "Budget constraints mentioned early",
+      "Competitive evaluation in progress",
+      "Implementation timeline concerns"
+    ]
+  },
+  
+  "compliance_and_quality": {
+    "script_adherence": 0.85,
+    "compliance_score": 0.98,
+    "quality_metrics": {
+      "clarity": 0.88,
+      "professionalism": 0.92,
+      "effectiveness": 0.87
+    },
+    "regulatory_requirements": [
+      "GDPR compliance maintained",
+      "Data privacy standards met",
+      "Recording consent obtained"
+    ]
+  }
+}
